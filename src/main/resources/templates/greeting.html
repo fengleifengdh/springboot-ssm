@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script th:src="@{/js/angular.js}"></script>
+    <script th:src="@{/js/my-angular/Hello.js}"></script>
+</head>
+<body>
+<div   >
+    <div ng-controller="HelloAngular">
+        aaa: {{greeting.text}}
+    </div>
+<!--    <div ng-controller="myCtrl">
+        名: <input type="text" ng-model="firstName"><br>
+        姓: <input type="text" ng-model="lastName"><br>
+        <br>
+        姓名: {{firstName + " " + lastName}}
+    </div>-->
+</div>
+</body>
+<script type="text/javascript">
+//    var app = angular.module('myApp', []);
+//    app.controller('myCtrl', function($scope) {
+//        $scope.firstName = "John";
+//        $scope.lastName = "Doe";
+//    });
+</script>
+<!--<script th:src="@{/js/my-angular/Hello.js}"></script>-->
+</html>
